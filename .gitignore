@@ -1,0 +1,18 @@
+# VScode 配置文件
+**/.vscode/
+# 视频
+**/video/
+# build目录
+build/
+# 图片
+**/.jpeg
+**/.png
+**/.jpg
+#视频
+**/*.avi
+**/*.mp4
+*.mp4
+#log
+**/logs/
+# mac的一些自生成文件
+**/.DS_Store
