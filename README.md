@@ -31,18 +31,18 @@ make
 
 ```
 .
-├── Config								# 配置文件
+├── Config                             
 └── src
-    ├── aimbot							# 自瞄
-    │   ├── antigyro					# 反陀螺
-    │   ├── armor						# 装甲板类
-    │   ├── armor_detect				# 装甲板检测
+    ├── aimbot							
+    │   ├── antigyro					
+    │   ├── armor						
+    │   ├── armor_detect				
     │   │   ├── findlightbars
     │   │   ├── grade_armors
     │   │   ├── image_process
     │   │   └── match_armors
-    │   ├── armor_predict				# 运动预测
-    │   ├── classifier					# 数字识别
+    │   ├── armor_predict				
+    │   ├── classifier					
     │   │   ├── classifier_dk
     │   │   │   └── darknet
     │   │   └── classifier_sj
@@ -50,32 +50,32 @@ make
     │   ├── others
     │   │   ├── init
     │   │   └── roi
-    │   └── pick_target					# 装甲板选择模式
+    │   └── pick_target					
     │       ├── search_armor
     │       └── track_armor
-    ├── camera							# 相机
+    ├── camera							
     │   └── mvcamera
-    ├── communication					# 通信
+    ├── communication					
     │   ├── can
     │   └── can_to_debug
-    ├── hit_sentinel					# 攻击哨兵模式
-    ├── runesolver						# 能量机关模式
+    ├── hit_sentinel					
+    ├── runesolver						
     │   ├── fit_rune_motion
     │   ├── runedetector
     │   └── runepredictor
-    ├── target_solve					# 坐标解算
-    ├── tools							# 工具
+    ├── target_solve					
+    ├── tools							
     │   ├── debugger
     │   ├── macros
     │   ├── queues
     │   ├── timer
     │   └── util_func
-    └── workspace						# 主程序流程控制模块
-        ├── commu_thread				# 通信线程
+    └── workspace						
+        ├── commu_thread				
         │   ├── receive_thread
         │   └── send_thread
-        ├── get_img_thread				# 图像接收线程
-        ├── img_process_thread			# 图像处理线程
+        ├── get_img_thread				
+        ├── img_process_thread			
         │   ├── armor_func
         │   ├── rune_func
         │   └── sentinel_func
@@ -84,35 +84,35 @@ make
 
 ## 模块介绍
 
-### `Config`
+### Config
 
 配置文件说明
 
-### `aimbot`
+### aimbot
 
-自瞄系统，包括装甲板类、装甲板检测、数字识别、运动预测、数字识别等多个模块。
+自瞄系统，包括装甲板类、装甲板检测、数字识别、运动预测、数字识别等多个模块
 
-### `camera`
+### camera
 
-对迈德威视相机 API 的再封装。
+对迈德威视相机 API 的再封装
 
-### `communication`
+### communication
 
-can 通信封装。
+can 通信封装
 
-### `hit_sentinel`
+### hit_sentinel
 
 该模块用于定点击打轨道上运动的哨兵。
 
-### `runesolver`
+### runesolver
 
 能量机关模块，包括椭圆拟合、能量机关装甲板识别和能量机关运动预测等多个模块。
 
-### `target_solve`
+### target_solve
 
 坐标解算模块，用于计算装甲板的三维坐标。
 
-### `workspace`
+### workspace
 
 主程序流程控制模块，其中包含对三个线程的调度：
 
@@ -120,6 +120,6 @@ can 通信封装。
 - 图像接收线程
 - 图像处理线程
 
-### `tools`
+### tools
 
 常用的工具代码。
