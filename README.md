@@ -1,4 +1,4 @@
-# HERO21-VISION_CODE
+# HERO21-VISION-CODE
 
 HERO-RoboMaster 团队 2021 赛季统一代码框架。所有机器人的视觉代码全部出自该框架。
 
